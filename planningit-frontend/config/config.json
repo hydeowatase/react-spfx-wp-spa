@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "wp-planningit-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/wpPlanningit/WpPlanningitWebPart.js",
+          "manifest": "./src/webparts/wpPlanningit/WpPlanningitWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "WpPlanningitWebPartStrings": "lib/webparts/wpPlanningit/loc/{locale}.js"
+  }
+}
