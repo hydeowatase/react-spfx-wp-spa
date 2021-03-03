@@ -1,5 +1,5 @@
 const Constants = {
-  iconsListUrl: "ativosdosite/images"
-}
+  iconsListUrl: "ativosdosite/images",
+};
 
 export default Constants;

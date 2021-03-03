@@ -11,30 +11,30 @@ const Menu: React.FC<IProps> = (props) => {
     <Container>
       <ul>
         <li>
-          <img src={`${props.iconUrl}/dashed-icon.png`} />
-          <span>Inicio</span>
+          <img src={`${props.iconUrl}/begin-icon.png`} />
+          <a>Inicio</a>
         </li>
         <li>
-          <img src={`${props.iconUrl}/dashed-icon.png`} />
-          <span>Novo BI</span>
+          <img src={`${props.iconUrl}/add-bi-icon.png`} />
+          <a>Novo BI</a>
         </li>
         <li>
-          <img src={`${props.iconUrl}/dashed-icon.png`} />
-          <span>Consultar</span>
+          <img src={`${props.iconUrl}/search-bi-icon.png`} />
+          <a>Consultar</a>
         </li>
         <li>
-          <img src={`${props.iconUrl}/dashed-icon.png`} />
-          <span>Cenários</span>
+          <img src={`${props.iconUrl}/scenario-icon.png`} />
+          <a>Cenários</a>
         </li>
         <li>
-          <img src={`${props.iconUrl}/dashed-icon.png`} />
-          <span>
+          <img src={`${props.iconUrl}/update-scenario-icon.png`} />
+          <a>
             Atualizar Base
-          </span>
+          </a>
         </li>
       </ul>
     </Container>
   );
-}
+};
 
 export default Menu;

@@ -8,8 +8,8 @@ import {
 import { BaseClientSideWebPart, WebPartContext } from '@microsoft/sp-webpart-base';
 
 import * as strings from 'WpPlanningitWebPartStrings';
-import WpPlanningit from './components/wp-principal/WpPlanningit';
-import { IWpPlanningitProps } from './components/wp-principal/IWpPlanningitProps';
+import WpPlanningit from './wp-principal/WpPlanningit';
+import { IWpPlanningitProps } from './wp-principal/IWpPlanningitProps';
 
 export interface IWpPlanningitWebPartProps {
   description: string;
