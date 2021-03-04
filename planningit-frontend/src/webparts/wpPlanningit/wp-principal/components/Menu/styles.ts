@@ -1,19 +1,6 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-
-      font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-      text-rendering: optimizeLegibility !important;
-      -webki-font-smoothig: antialiased !important;
-    }
-
-    a {
-      font-size: 24px;
-    }
 
     ul {
       list-style: none;
@@ -26,6 +13,10 @@ export const Container = styled.div`
         flex-direction: row;
         align-items: center;
 
+        a {
+           font-size: 20px;
+          }
+
         & + li {
           margin-top: 14px;
         }
@@ -36,6 +27,8 @@ export const Container = styled.div`
           transform: translateX(10px);
           transition-duration: 0.5s
         }
+
+
       }
     }
 

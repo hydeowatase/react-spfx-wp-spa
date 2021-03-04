@@ -1,8 +1,30 @@
 @import "~office-ui-fabric-react/dist/sass/References.scss";
 
-.wpPlanningit {
+.wpPlanningitContainer {
+  * {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webki-font-smoothig: antialiased !important;
+  }
+
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+
+  font-size: 14px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webki-font-smoothig: antialiased !important;
+
+  .wpPlanningitContent {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+
+    .mainArea {
+      margin-left: 24px;
+      flex: 1;
+    }
+  }
 }
