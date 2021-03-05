@@ -1,0 +1,78 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  .contentform {
+    max-width: 616px;
+    padding: 20px 50px;
+  }
+
+  .contentcolumn {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+
+    // & + .column {
+    //   border-left: 1px solid black;
+    // }
+  }
+
+  .flex1 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+  }
+
+  input {
+    height: 25px;
+    width: 200px;
+  }
+}
+
+.comentario {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+    height: 157px;
+    -ms-layout-grid-line: auto;
+  }
+}
+
+.rowBtn {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  button {
+
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+  }
+
+  .btnCancel {
+    background: #eb0029 !important;
+    border: none;
+
+  }
+}

@@ -1,20 +1,17 @@
 @import "~office-ui-fabric-react/dist/sass/References.scss";
 
 form {
-  .column {
+  .row {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-
-    & {
-      margin-top: 20px;
-    }
   }
 
   .flex1 {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     label {
       margin-bottom: 5px;
@@ -23,7 +20,7 @@ form {
 
   input {
     height: 25px;
-    width: 200px;
+    padding-right: 14px;
   }
 }
 
@@ -51,9 +48,9 @@ button {
 }
 
 .gridResultado {
-  margin-top: 20px;
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto max-content max-content max-content;
   border: 0.5px solid #aca9bb;
 
   div {
@@ -72,8 +69,16 @@ button {
   }
 
   .gridResultadoItem {
+    min-width: 150px;
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .fieldBtnClose {
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   span {
