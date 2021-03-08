@@ -14,10 +14,12 @@
     "@microsoft/sp-office-ui-fabric-core": "1.11.0",
     "@microsoft/sp-property-pane": "1.11.0",
     "@microsoft/sp-webpart-base": "1.11.0",
+    "@react-icons/all-files": "^4.1.0",
     "@types/styled-components": "^5.1.7",
     "office-ui-fabric-react": "6.214.0",
     "react": "16.8.5",
     "react-dom": "16.8.5",
+    "react-icons": "^4.2.0",
     "styled-components": "^5.2.1",
     "tslint": "^6.1.3"
   },

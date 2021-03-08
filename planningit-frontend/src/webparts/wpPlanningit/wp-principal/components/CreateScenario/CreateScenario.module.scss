@@ -1,0 +1,69 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  .contentform {
+    max-width: 616px;
+    padding: 20px 50px;
+
+    .row {
+      display: flex;
+      flex: 1;
+
+      .flex1 {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        label {
+          margin-bottom: 5px;
+          margin-top: 10px;
+        }
+
+        input {
+          padding: 5px;
+        }
+
+        input[type="checkbox"] {
+          width: 24px;
+          cursor: pointer;
+          background-color: #004691;
+        }
+
+        input,
+        select {
+          height: 30px;
+        }
+
+        select {
+          width: 300px;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .rowBtn {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      button {
+        height: 30px;
+        width: 150px;
+        border-radius: 5px;
+      }
+
+      .btnCancel {
+        background: #eb0029 !important;
+        border: none;
+      }
+    }
+  }
+}

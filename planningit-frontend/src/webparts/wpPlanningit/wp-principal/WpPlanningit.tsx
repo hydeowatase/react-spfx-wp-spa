@@ -9,6 +9,7 @@ import Consulta from './components/Search/Search';
 import BIDetails from './components/BIDetails/BIDetails';
 import RealocarBudget from './components/ReallocateBudget/ReallocateBudget';
 import Scenario from './components/Scenario/Scenario';
+import CreatyeScenario from './components/CreateScenario/CreateScenario';
 
 const WpPlanningit: React.FC<IWpPlanningitProps> = (props) => {
   return (
@@ -17,7 +18,7 @@ const WpPlanningit: React.FC<IWpPlanningitProps> = (props) => {
         <div className={styles.wpPlanningitContent}>
           <Menu iconUrl={`${props.context.pageContext.web.absoluteUrl}/${props.listIconUrl}`.replace(/\s/g, "")} />
           <div className={styles.mainArea}>
-            <Scenario className={styles.mainArea} />
+            <CreatyeScenario />
           </div>
         </div>
       </div>
