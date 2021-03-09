@@ -4,7 +4,7 @@ import { MenuContainer } from './Menustyles';
 import { Link } from 'react-router-dom';
 
 import WebPartPlannningIT from '../../WpPlanningit';
-import BINewForm from '../BINewForm/NovoBIForm';
+import BINewForm from '../BINewForm/BINewForm';
 import Consulta from '../Search/Search';
 import BIDetails from '../BIDetails/BIDetails';
 import RealocarBudget from '../ReallocateBudget/ReallocateBudget';
