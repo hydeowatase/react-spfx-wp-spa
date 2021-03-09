@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+export const MenuContainer = styled.div`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     ul {

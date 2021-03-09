@@ -1,6 +1,16 @@
 import { WebPartContext } from '@microsoft/sp-webpart-base';
 import * as React from 'react';
-import { Container } from './styles';
+import { MenuContainer } from './Menustyles';
+import { Link } from 'react-router-dom';
+
+import WebPartPlannningIT from '../../WpPlanningit';
+import BINewForm from '../BINewForm/NovoBIForm';
+import Consulta from '../Search/Search';
+import BIDetails from '../BIDetails/BIDetails';
+import RealocarBudget from '../ReallocateBudget/ReallocateBudget';
+import Scenario from '../Scenario/Scenario';
+import CreateScenario from '../CreateScenario/CreateScenario';
+import UploadFiles from '../UploadFiles/UploadFiles';
 
 export interface IProps {
   iconUrl: string;
@@ -8,15 +18,15 @@ export interface IProps {
 
 const Menu: React.FC<IProps> = (props) => {
   return (
-    <Container>
+    <MenuContainer>
       <ul>
         <li>
           <img src={`${props.iconUrl}/begin-icon.png`} />
-          <a>Inicio</a>
+          <Link to="#/">Inicio</Link>
         </li>
         <li>
           <img src={`${props.iconUrl}/add-bi-icon.png`} />
-          <a>Novo BI</a>
+          <Link to="#/NovoBIForm">Novo BI</Link>
         </li>
         <li>
           <img src={`${props.iconUrl}/search-bi-icon.png`} />
@@ -33,7 +43,7 @@ const Menu: React.FC<IProps> = (props) => {
           </a>
         </li>
       </ul>
-    </Container>
+    </MenuContainer>
   );
 };
 

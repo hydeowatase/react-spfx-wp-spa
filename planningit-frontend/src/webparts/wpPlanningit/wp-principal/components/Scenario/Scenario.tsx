@@ -1,7 +1,7 @@
 import *  as React from 'react';
 import styles from './Scenario.module.scss';
 
-import { FiXCircle } from 'react-icons/fi'
+import { FiXCircle } from 'react-icons/fi';
 
 const Consulta: React.FC<any> = () => {
   return (
