@@ -3,7 +3,7 @@
   "solution": {
     "name": "planningit-client-side-solution",
     "id": "8496332e-53b9-4cdb-9ab7-8aa7b0c8e945",
-    "version": "1.0.0.0",
+    "version": "1.2.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,

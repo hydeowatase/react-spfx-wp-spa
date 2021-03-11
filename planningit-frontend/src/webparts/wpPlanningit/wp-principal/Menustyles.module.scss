@@ -1,67 +1,63 @@
 @import "~office-ui-fabric-react/dist/sass/References.scss";
 .MenuContainer {
-    box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.25);
-    // nav
-    .navbar {
-        width: 5rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  // nav
+  .navbar {
+    width: 5rem;
+  }
+  .navbar:hover {
+    width: 16rem;
+  }
+  .navbar:hover .linktext {
+    display: block;
+    transition-duration: 0.5s;
+    margin-left: 0;
+  }
+  // ul
+  .navbarnav {
+    // list-style: none;
+    // display: flex;
+    // flex-direction: column;
+    // padding: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // li
+  .navbaritem {
+    width: 100%;
+  }
+  .navbaritem:last-child {
+    margin-top: auto;
+  }
+  .navlink {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    text-decoration: none;
+
+    &:hover {
+      transform: translateX(5px);
+      transition-duration: 0.5s;
     }
-    .navbar:hover {
-        width: 16rem;
+
+    .linktext {
+      display: none;
+
+      font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+      text-rendering: optimizeLegibility !important;
+      -webki-font-smoothig: antialiased !important;
+      font-size: 20px;
+      font-weight: 700;
+      color: #4d4d4d;
     }
-    .navbar:hover .linktext {
-        display: block;
+
+    .icon {
+      margin: 0 1.5rem;
+      color: #2b2b2b;
     }
-    // ul
-    .navbarnav {
-        // list-style: none;
-        // display: flex;
-        // flex-direction: column;
-        // padding: 5px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    // li
-    .navbaritem {
-        // flex: 1;
-        // display: flex;
-        // flex-direction: row;
-        // align-items: center;
-        // a {
-        //     font-size: 20px;
-        // }
-        // &+li {
-        //     margin-top: 14px;
-        // }
-        // cursor: pointer;
-        // &:hover {
-        //     transform: translateX(10px);
-        //     transition-duration: 0.5s;
-        // }
-        width: 100%;
-    }
-    .navbaritem:last-child {
-        margin-top: auto;
-    }
-    .navlink {
-        display: flex;
-        align-items: center;
-        height: 3rem;
-        text-decoration: none;
-        .linktext {
-            display: none;
-            margin-left: 1rem;
-            text-decoration: none;
-        }
-        img {
-            // margin-right: 8px;
-            // height: 24px;
-            // width: 24px;
-            width: 1rem;
-            margin: 0 1.5rem;
-        }
-    }
+  }
 }

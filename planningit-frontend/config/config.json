@@ -6,7 +6,8 @@
       "components": [
         {
           "entrypoint": "./lib/webparts/wpPlanningit/WpPlanningitWebPart.js",
-          "manifest": "./src/webparts/wpPlanningit/WpPlanningitWebPart.manifest.json"
+          "manifest": "./src/webparts/wpPlanningit/WpPlanningitWebPart.manifest.json",
+          "version": "2.0.0.0"
         }
       ]
     }

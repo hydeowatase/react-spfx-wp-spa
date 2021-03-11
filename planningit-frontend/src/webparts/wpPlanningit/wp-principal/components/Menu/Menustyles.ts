@@ -29,8 +29,6 @@ export const MenuContainer = styled.div`
           transform: translateX(10px);
           transition-duration: 0.5s
         }
-
-
       }
     }
 

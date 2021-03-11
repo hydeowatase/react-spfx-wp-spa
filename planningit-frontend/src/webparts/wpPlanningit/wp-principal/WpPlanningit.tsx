@@ -1,6 +1,7 @@
 import * as React from "react";
 import { IWpPlanningitProps } from "./IWpPlanningitProps";
 import { escape } from "@microsoft/sp-lodash-subset";
+import { FiAlignJustify, FiPlusCircle, FiSearch, FiCopy, FiUpload } from "react-icons/fi";
 
 import {
   BrowserRouter as Router,
@@ -42,31 +43,31 @@ const WpPlanningit: React.FC<IWpPlanningitProps> = (props) => {
               <ul className={Menustyles.navbarnav} >
                 <li className={Menustyles.navbaritem}>
                   <NavLink className={Menustyles.navlink} to="/">
-                    <img src={`${listBaseUrl}/begin-icon.png`} />
+                    <div className={Menustyles.icon}><FiAlignJustify size={30} /></div>
                     <span className={Menustyles.linktext}>Inicio</span>
                   </NavLink>
                 </li>
                 <li className={Menustyles.navbaritem}>
                   <NavLink className={Menustyles.navlink} to="/BINewForm">
-                    <img src={`${listBaseUrl}/add-bi-icon.png`} />
+                    <div className={Menustyles.icon}><FiPlusCircle size={30} /></div>
                     <span className={Menustyles.linktext}>Novo BI</span>
                   </NavLink>
                 </li>
                 <li className={Menustyles.navbaritem}>
                   <NavLink className={Menustyles.navlink} to="/Consulta">
-                    <img src={`${listBaseUrl}/search-bi-icon.png`} />
+                    <div className={Menustyles.icon}><FiSearch size={30} /></div>
                     <span className={Menustyles.linktext}>Consulta</span>
                   </NavLink>
                 </li>
                 <li className={Menustyles.navbaritem}>
                   <NavLink className={Menustyles.navlink} to="/Scenario">
-                    <img src={`${listBaseUrl}/scenario-icon.png`} />
+                    <div className={Menustyles.icon}><FiCopy size={30} /></div>
                     <span className={Menustyles.linktext}>Cenários</span>
                   </NavLink>
                 </li>
                 <li className={Menustyles.navbaritem}>
                   <NavLink className={Menustyles.navlink} to="/UploadFiles">
-                    <img src={`${listBaseUrl}/update-scenario-icon.png`} />
+                    <div className={Menustyles.icon}><FiUpload size={30} /></div>
                     <span className={Menustyles.linktext}>Atualizar Base</span>
                   </NavLink>
                 </li>
