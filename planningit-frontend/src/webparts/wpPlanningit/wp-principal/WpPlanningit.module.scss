@@ -1,45 +1,39 @@
 @import "~office-ui-fabric-react/dist/sass/References.scss";
-
 .wpPlanningitContainer {
-  * {
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    * {
+        font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        text-rendering: optimizeLegibility !important;
+        -webki-font-smoothig: antialiased !important;
+        button {
+            align-content: center;
+            border: none;
+            outline: none;
+            background: #004691;
+            cursor: pointer;
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Helvetica Neue",
+    "Helvetica",
+    Arial,
+    sans-serif;
     text-rendering: optimizeLegibility !important;
     -webki-font-smoothig: antialiased !important;
-
-    button {
-      align-content: center;
-      border: none;
-      outline: none;
-      background: #004691;
-      cursor: pointer;
-
-      font-size: 18px;
-      color: #fff;
+    .wpPlanningitContent {
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        .mainArea {
+            margin-left: 24px;
+            flex: 1;
+        }
     }
-  }
-
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-
-  font-size: 14px;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  text-rendering: optimizeLegibility !important;
-  -webki-font-smoothig: antialiased !important;
-
-  .wpPlanningitContent {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    display: flex;
-    max-width: 1200px;
-    margin: auto;
-
-    padding: 20px;
-
-    .mainArea {
-      margin-left: 24px;
-      flex: 1;
-    }
-  }
 }
